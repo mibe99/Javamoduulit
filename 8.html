@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function checkLeapYear(vuosi3) {
+
+    if ((0 == vuosi3 % 4) && (0 != vuosi3 % 100) || (0 == vuosi3 % 400)) {
+        console.log(vuosi3 + ' is a leap year');
+    } else {
+        console.log(vuosi3 + ' is not a leap year');
+    }
+}
+    let vuosi1, vuosi2, vuosi3;
+    const vuodet = []
+    const vuodet1 = []
+    vuosi1 = prompt('Ensimmäinen vuosi jonka haluat tarkistaa?');
+    vuosi2 = prompt('Viimeinen vuosi?')
+    for (vuosi3 = vuosi1; vuosi3 <= vuosi2; vuosi3++) {
+        checkLeapYear(vuosi3)
+        if (checkLeapYear() == true) {
+            vuodet.push(vuosi3);
+        } else {
+            vuodet1.push(vuosi3);
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Elektroninen lajitteluhattu</h1>
+<p id="target"></p>
+<p id="hattu"></p>
+
+<script>
+
+    let talo, numero4;
+    const nimi = prompt('Hei, mikä on nimesi?: ');
+    document.querySelector('#target').innerHTML = 'Moi, ' + nimi + '!';
+    // numero4 = Math.floor(math.random() * 5) + 1;
+    numero4 = '1'
+    switch (numero4) {
+        case '1':
+            talo = 'Rohkelikko'
+            break;
+        case '2':
+            talo = 'Puuskupuh'
+            break;
+        case '3':
+            talo = 'Luihunen'
+            break;
+        case '4':
+            talo = 'Korpinkynsi'
+            break;
+    }
+    document.querySelector("#hattu").innerHTML = + nimi + ' sinä olet ' + talo + '!';
+
+</script>
+</body>
+</html>

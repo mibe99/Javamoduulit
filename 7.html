@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jea boi</title>
+
+</head>
+
+<body>
+<p id="on"></p>
+<script>
+  let luku, noppa, sum;
+  sum = 0
+  luku = parseFloat(prompt('Kuinka montaa noppaa haluat heittää?'))
+  for (let toistot = 0; toistot <= luku; luku++) {
+      noppa = Math.floor(Math.random() * 6) + 1
+      sum = parseFloat(sum + noppa);
+  }
+  //document.querySelector("#on").innerHTML = 'Heittämiesi noppien silmälukujen summa on ' + sum +;
+  console.log(sum)
+</script>
+</body>
+</html>

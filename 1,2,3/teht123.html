@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Moi kaikki</h1>
+<p id="target"></p>
+<p id="toka"></p>
+<p id="kolmas"></p>
+<script>
+    'use strict'
+    let numero1, numero2, numero3, sum, kerto, avg;
+    console.log('Printtaan konsoliin');
+    numero1 = parseFloat(prompt('Hei anna kolme numeroa(yksi kerrallaan): '))
+    numero2 = parseFloat(prompt('Toinen: '))
+    numero3 = parseFloat(prompt('Viimeinen: '))
+    sum = numero1+numero2+numero3
+    kerto = numero1*numero2*numero3
+    avg = sum/3
+
+    document.querySelector("#target").innerHTML = 'Lukujesi summa on: ' + sum + '!'
+    document.querySelector("#toka").innerHTML = 'Lukujesi kertoma on: ' + kerto + '!'
+    document.querySelector("#kolmas").innerHTML = 'Lukujesi keskiarvo on: ' + avg + '!'
+</script>
+
+</body>
+</html>

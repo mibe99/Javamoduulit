@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let vuosi, vastaus;
+    vuosi = parseFloat(prompt('Minkä vuoden haluat tarkistaa?'))
+    if (vuosi % 4 === 0) {
+            if (vuosi % 100 === 0) {
+                if (vuosi % 400 === 0) {
+                    vastaus = 'Vuosi on karkausvuosi1';
+                }
+                else {
+                    vastaus = 'Vuosi ei ole karkausvuosi2';
+                }
+            }
+            else {
+                vastaus = 'Vuosi on karkausvuosi3';
+            }
+    }
+    else {
+        vastaus = 'Vuosi ei ole karkausvuosi4';
+    }
+    console.log(vastaus);
+</script>
+</body>
+</html>

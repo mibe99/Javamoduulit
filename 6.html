@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="test"></p>
+<p id="toimi"></p>
+<script>
+    let input, luku, vastaus;
+    input = confirm('Pitäskö laskea neliöjuuri?')
+    if (input == true) {
+        luku = parseFloat(prompt('Minkä luvun neliöjuuren lasken?'))
+        vastaus = Math.sqrt(luku)
+        document.querySelector("#toimi").innerHTML = 'Lukusi neliöjuuri on ' + vastaus +
+    }
+    else {
+        document.querySelector("#kolmas").innerHTML = 'Aijaa :('
+    }
+</script>
+
+</body>
+</html>
